@@ -1,11 +1,14 @@
 package br.com.carlos.controllers;
 
+import java.util.List;
+
 //import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 //import org.springframework.web.bind.annotation.DeleteMapping;
 //import org.springframework.web.bind.annotation.GetMapping;
 //import org.springframework.web.bind.annotation.PathVariable;
@@ -20,7 +23,7 @@ import io.swagger.annotations.ApiOperation;
 
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/usuarios")
 public class UsuariosController {
 	@Autowired
 	UsuarioRepository usuarioRepository;
@@ -37,11 +40,12 @@ public class UsuariosController {
 		
 	}
 	
-//	@GetMapping
-//	public List<Usuario> listar() {
-//		return usuarioRepository.findAll();
-//		
-//	}
+	@GetMapping
+	@ApiOperation(value="Permite a listagem de todos os usuarios")
+	public List<Usuario> listar() {
+		return usuarioRepository.findAll();
+		
+	}
 //	
 //	@GetMapping("/{id}")
 //	public  Usuario busca(@PathVariable("id") Long id) {
