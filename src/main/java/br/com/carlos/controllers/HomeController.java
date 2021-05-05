@@ -20,6 +20,7 @@ import io.swagger.annotations.ApiOperation;
 
 
 @RestController
+@CrossOrigin
 public class HomeController {
 	
 	@Autowired

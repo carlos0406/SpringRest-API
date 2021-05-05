@@ -29,6 +29,7 @@ import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping("/tarefas")
+@CrossOrigin
 public class TarefaController {
 	@Autowired
 	TarefaRepository tarefaRepository;

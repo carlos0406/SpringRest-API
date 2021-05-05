@@ -24,6 +24,7 @@ import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping("/usuarios")
+@CrossOrigin
 public class UsuariosController {
 	@Autowired
 	UsuarioRepository usuarioRepository;
