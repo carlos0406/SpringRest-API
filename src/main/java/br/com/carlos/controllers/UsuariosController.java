@@ -21,7 +21,7 @@ import br.com.carlos.Model.Usuario;
 import br.com.carlos.repository.UsuarioRepository;
 import io.swagger.annotations.ApiOperation;
 
-@CrossOrigin(origins = "*")
+
 @RestController
 @RequestMapping("/usuarios")
 public class UsuariosController {

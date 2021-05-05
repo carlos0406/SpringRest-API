@@ -18,7 +18,7 @@ import br.com.carlos.service.UserService;
 import br.com.carlos.utils.JWTUtils;
 import io.swagger.annotations.ApiOperation;
 
-@CrossOrigin(origins = "*")
+
 @RestController
 public class HomeController {
 	

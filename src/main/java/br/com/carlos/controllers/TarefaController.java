@@ -26,7 +26,7 @@ import br.com.carlos.repository.TarefaRepository;
 import br.com.carlos.repository.UsuarioRepository;
 import io.swagger.annotations.ApiOperation;
 
-@CrossOrigin(origins = "*")
+
 @RestController
 @RequestMapping("/tarefas")
 public class TarefaController {
